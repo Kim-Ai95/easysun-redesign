@@ -1,0 +1,32 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.log
+
+# Secrets
+.env
+.env.*
+
+# Cursor / Claude internals — not the public website
+.cursor/
+.claude-plugin/
+
+# Agent skills, specs, and templates
+skills/
+spec/
+template/
+
+# Internal design notes and local image pipeline
+docs/
+tools/
+
+# Unused camera originals at assets root.
+# The live site only serves derivatives in assets/img/.
+assets/*.jpeg
+assets/*.jpg
+assets/*.JPG
+assets/*.JPEG
+
+# Dependencies if added later
+node_modules/

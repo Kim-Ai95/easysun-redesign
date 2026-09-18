@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img" aria-label="EasySun">
+  <rect width="24" height="24" rx="4" fill="#292420"/>
+  <circle cx="12" cy="14" r="5" fill="#F4D62A"/>
+  <g stroke="#F4D62A" stroke-width="1.7" stroke-linecap="round">
+    <path d="M12 7.1V4.9"/>
+    <path d="M16.88 9.12l1.55-1.55"/>
+    <path d="M7.12 9.12L5.57 7.57"/>
+    <path d="M5.1 14H2.9"/>
+    <path d="M18.9 14h2.2"/>
+  </g>
+</svg>

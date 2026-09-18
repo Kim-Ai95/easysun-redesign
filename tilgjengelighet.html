@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tilgjengelighetserklæring | EasySun</title>
+<meta name="description" content="Status for universell utforming på easysun.co, målt mot WCAG 2.1 nivå AA, med kjente mangler og hvordan du melder fra.">
+<link rel="canonical" href="https://easysun.co/tilgjengelighet.html">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="nb_NO">
+<meta property="og:site_name" content="EasySun">
+<meta property="og:title" content="Tilgjengelighetserklæring | EasySun">
+<meta property="og:url" content="https://easysun.co/tilgjengelighet.html">
+<meta name="theme-color" content="#f7f1e6">
+<link rel="icon" href="assets/brand/favicon.svg" type="image/svg+xml">
+<link rel="preload" as="font" type="font/woff2" href="assets/fonts/schibsted-grotesk-latin.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="assets/fonts/source-serif-4-latin.woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/easysun.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Hopp til hovedinnhold</a>
+
+<header class="site-header" data-header>
+  <div class="container site-header__inner">
+    <a class="wordmark" href="index.html" aria-label="EasySun — til forsiden">
+      <svg class="wordmark__mark" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false">
+        <circle cx="12" cy="14" r="5" fill="#F4D62A"></circle>
+        <g stroke="currentColor" stroke-width="1.7" stroke-linecap="round">
+          <path d="M12 7.1V4.9"></path><path d="M16.88 9.12l1.55-1.55"></path>
+          <path d="M7.12 9.12L5.57 7.57"></path><path d="M5.1 14H2.9"></path>
+          <path d="M18.9 14h2.2"></path>
+        </g>
+      </svg>
+      EasySun
+    </a>
+    <nav class="nav" aria-label="Hovedmeny">
+      <ul class="nav__list">
+        <li><a class="nav__link" href="losningen.html">Løsningen</a></li>
+        <li><a class="nav__link" href="slik-fungerer-det.html">Slik fungerer det</a></li>
+        <li><a class="nav__link" href="dokumentasjon.html">Dokumentasjon</a></li>
+        <li><a class="nav__link" href="referanser.html">Referanser</a></li>
+        <li><a class="nav__link" href="priser.html">Priser</a></li>
+      </ul>
+      <div class="nav__actions">
+        <a class="nav__link" href="om-oss.html">Om oss</a>
+        <a class="btn btn--primary" href="kontakt.html">Ta kontakt</a>
+      </div>
+    </nav>
+    <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="drawer" aria-label="Åpne meny">
+      <span class="nav-toggle__bars" aria-hidden="true"></span>
+    </button>
+  </div>
+</header>
+
+<div class="drawer" id="drawer" data-drawer hidden>
+  <div class="container">
+    <ul class="drawer__list">
+      <li><a class="drawer__link" href="losningen.html">Løsningen</a></li>
+      <li><a class="drawer__link" href="slik-fungerer-det.html">Slik fungerer det</a></li>
+      <li><a class="drawer__link" href="dokumentasjon.html">Dokumentasjon</a></li>
+      <li><a class="drawer__link" href="referanser.html">Referanser</a></li>
+      <li><a class="drawer__link" href="priser.html">Priser</a></li>
+      <li><a class="drawer__link" href="om-oss.html">Om oss</a></li>
+    </ul>
+    <div class="drawer__cta"><a class="btn btn--primary" href="kontakt.html">Ta kontakt</a></div>
+  </div>
+</div>
+
+<main id="main">
+
+  <section class="page-header">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Du er her">
+        <ol>
+          <li><a href="index.html">Hjem</a></li>
+          <li aria-current="page">Tilgjengelighet</li>
+        </ol>
+      </nav>
+      <h1 class="page-header__title">Tilgjengelighetserklæring</h1>
+      <p class="lede page-header__lede">
+        Vi bygger easysun.co mot WCAG 2.1 nivå AA. Under står hva som er på plass, hva vi
+        vet ikke er ferdig, og hvordan du sier fra hvis noe er vanskelig å bruke.
+      </p>
+      <p class="meta" style="margin-top: var(--space-6);">Sist gjennomgått: september 2026</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="rich">
+
+        <h2>Standard vi måler mot</h2>
+        <p>
+          Nettstedet er utviklet mot <strong>WCAG 2.1 nivå AA</strong>. Vi har valgt denne
+          standarden som utgangspunkt for hele nettstedet, ikke bare for de delene der den
+          er lovpålagt.
+        </p>
+
+        <h2>Dette er på plass</h2>
+        <ul>
+          <li>Semantisk oppbygging med landemerker for topptekst, navigasjon, hovedinnhold og bunntekst, og én overskrift på nivå 1 per side.</li>
+          <li>«Hopp til hovedinnhold»-lenke som første element du når med tastatur.</li>
+          <li>Hele nettstedet kan betjenes med tastatur alene. Menyen på mobil er en ekte knapp med <code>aria-expanded</code>, den kan lukkes med Escape, og fokus holdes inne i menyen mens den er åpen.</li>
+          <li>Synlig fokusmarkering på alt som kan få fokus. Fokusringen er egen farge og animeres ikke.</li>
+          <li>Kontrast: brødtekst og overskrifter ligger over 4,5:1 mot bakgrunnen. Gul knappefarge brukes kun med mørk tekst oppå.</li>
+          <li>Klikkeflater er minst 44 × 44 piksler.</li>
+          <li>Alle meningsbærende bilder har beskrivende alternativ tekst. Dekorative grafiske elementer er skjult for skjermlesere.</li>
+          <li>Skjemaet har synlige ledetekster, feilmeldinger knyttet til riktig felt, og en statusmelding som leses opp av skjermleser.</li>
+          <li>Bevegelse er begrenset til korte overganger, og slås av helt for brukere som har valgt <code>prefers-reduced-motion</code>.</li>
+          <li>Informasjon formidles aldri gjennom farge alene.</li>
+          <li>Innholdet er skrevet på norsk bokmål og sidene er merket med riktig språk.</li>
+        </ul>
+
+        <h2>Kjente mangler</h2>
+        <p>
+          Vi lister opp det vi vet ikke er ferdig, framfor å hevde full samsvar vi ikke har
+          dokumentert.
+        </p>
+        <ul>
+          <li>
+            <strong>Ekstern revisjon er ikke gjennomført.</strong> Vurderingen over er gjort
+            internt. En uavhengig gjennomgang er ikke bestilt ennå, og erklæringen oppdateres
+            når den foreligger.
+          </li>
+          <li>
+            <strong>Dokumenter fra tredjepart.</strong> Vi lenker til rapporter og PDF-er fra
+            DSA og Kreftregisteret. Vi kontrollerer ikke tilgjengeligheten i disse
+            dokumentene. Trenger du innholdet i et annet format, hjelper vi deg med det.
+          </li>
+          <li>
+            <strong>Manglende opplysninger.</strong> Enkelte felter — som organisasjonsnummer
+            og deler av den tekniske spesifikasjonen — er merket «bekreftes» i påvente av
+            endelige opplysninger.
+          </li>
+        </ul>
+
+        <h2>Si fra hvis noe ikke virker</h2>
+        <p>
+          Opplever du at noe på nettstedet er vanskelig eller umulig å bruke, vil vi gjerne
+          høre om det. Send en e-post til
+          <a href="mailto:post@easysun.co">post@easysun.co</a> og beskriv gjerne hvilken side
+          det gjelder og hva som skjedde. Vi svarer normalt innen fem virkedager.
+        </p>
+        <p>
+          Trenger du informasjon fra nettstedet i et annet format, ordner vi det. Du trenger
+          ikke begrunne hvorfor.
+        </p>
+
+        <h2>Klage</h2>
+        <p>
+          Er du ikke fornøyd med hvordan vi følger opp, kan du melde fra til
+          <a href="https://www.uutilsynet.no/" rel="noopener">Tilsynet for universell utforming av ikt</a>.
+        </p>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__top">
+      <div>
+        <a class="wordmark" href="index.html">
+          <svg class="wordmark__mark" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false">
+            <circle cx="12" cy="14" r="5" fill="#F4D62A"></circle>
+            <g stroke="currentColor" stroke-width="1.7" stroke-linecap="round">
+              <path d="M12 7.1V4.9"></path><path d="M16.88 9.12l1.55-1.55"></path>
+              <path d="M7.12 9.12L5.57 7.57"></path><path d="M5.1 14H2.9"></path>
+              <path d="M18.9 14h2.2"></path>
+            </g>
+          </svg>
+          EasySun
+        </a>
+        <p class="site-footer__tagline">Når du glemmer deg ut, er vi der for deg og din hud.</p>
+      </div>
+      <div class="footer-nav">
+        <div>
+          <h2>Løsningen</h2>
+          <ul>
+            <li><a href="losningen.html">Stasjonen</a></li>
+            <li><a href="slik-fungerer-det.html">Slik fungerer det</a></li>
+            <li><a href="priser.html">Priser og leiemodell</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Grunnlag</h2>
+          <ul>
+            <li><a href="dokumentasjon.html">Dokumentasjon</a></li>
+            <li><a href="referanser.html">Referanser</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Selskap</h2>
+          <ul>
+            <li><a href="om-oss.html">Om oss</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <span>&copy; 2026 EasySun</span>
+      <span>Org.nr <span class="is-pending-value">bekreftes</span></span>
+      <span>Adresse <span class="is-pending-value">bekreftes</span></span>
+      <a href="personvern.html">Personvern</a>
+      <a href="tilgjengelighet.html">Tilgjengelighetserklæring</a>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/easysun.js" defer></script>
+</body>
+</html>
